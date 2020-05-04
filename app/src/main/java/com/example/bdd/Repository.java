@@ -1,10 +1,5 @@
 package com.example.bdd;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.JdbcTemplate;
-
-import java.util.List;
-
 public class Repository {
 /*
     @Autowired
@@ -22,14 +17,14 @@ public class Repository {
         return jdbcTemplate.update("DELETE FROM \"PERSONS\" WHERE \"ID\" = ?",id);
     }
 
- */
-/*
+
+
     public Persons getPerson(Integer id){
         return jdbcTemplate.queryForObject("SELECT * FROM \"PERSONS\" WHERE
                 \"ID\"=?", new PersonsMapper(), id);
     }
+*/
 
- */
 /*
     public List<Group> getGroups(Integer id){
         return jdbcTemplate.query("SELECT * FROM \"Person\" WHERE \"id\"=?", new GroupMapper(), id);
